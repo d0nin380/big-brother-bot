@@ -1,0 +1,32 @@
+<configuration plugin="DircPlugin">
+	<settings name="settings">
+	
+		<!-- Name of the IRC server you want to connect-->
+		<set name="server">irc.rizon.net</set>
+		
+		<!-- Port the IRC server is running in-->
+		<set name="port">6667</set>
+		
+		<!-- This will be a hidden value later on as we want the bot to use the botnick in the game server but still have the option of changing the name if needed.-->
+		<set name="nick">MWTCBot</set>
+		
+		<!-- The channel you want to connect to (including the hash) -->
+		<set name="channel">#dIRCBot</set>
+		
+		<!-- Bot chat prefix, Set this to a character or character combination.
+		Every message in IRC starting with the Bot cmd prefix will be sent to the the admin plugin. -->
+		<set name="bot_cmd_prefix">!</set>
+		
+		<!-- Bot cmd prefix, Set this to a character or character combination. 
+		Every message in IRC starting with the Bot chat prefix will be sent to the game server. -->
+		<set name="bot_chat_prefix">></set>
+		
+		<!-- Bot auth name and password (if you dont know what this is then leave it empty)-->
+		<set name="botauth"></set>
+		
+		<!-- Socket time out. The socket is blocking while it is waiting for data. If too low, bot may not be able to parse all the data
+		too high and it will block everything for the delay of time out. suggested value between 0.5 and 2-->
+		<set name="timeout">1</set>
+				
+	</settings>
+</configuration>
